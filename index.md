@@ -4,7 +4,7 @@ layout: default
 
 # Motivation
 ---
-![Heart Health](/images/heart-health.jpg)
+![Heart Health](/images/heart-health-2.jpg)
 
 > We want to promote general public health by increasing people’s awareness of heart disease factors. Our model can potentially assist physicians to identify people at risk.
 
