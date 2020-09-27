@@ -4,6 +4,8 @@ layout: default
 
 # Motivation
 ---
+![Heart Health](/images/heart-health.jpg)
+
 > We want to promote general public health by increasing people’s awareness of heart disease factors. Our model can potentially assist physicians to identify people at risk.
 
 # Problem Definition
@@ -41,6 +43,8 @@ The model we build for this project, both supervised and unsupervised, should ma
 # Discussion
 ---
 During this phase of the project, we have some discussions on datasets. The dataset we chose on Kaggle is just an excerpt from the original dataset, and contains relatively a small amount of data. This could potentially lead to model overfitting. Therefore, we are thinking of including more data from the original datasets, which would require more data cleaning analysis but could lead to better models.[3]
+
+![Dataset First Glance](/images/raw-data-table.png)
 
 # References
 ---
