@@ -8,6 +8,8 @@ layout: default
 
 > We want to promote general public health by increasing people’s awareness of heart disease factors. Our model can potentially assist physicians to identify people at risk.
 
+[YouTube Video](https://www.youtube.com/watch?v=k106eh61UK8)
+
 # Problem Definition
 ---
 In heart disease, the heart is unable to push the required amount of blood to other parts of the body. The diagnosis of heart disease through traditional medical history has been considered as not reliable in many aspects. To classify the healthy people and people with heart disease, noninvasive-based methods such as machine learning are reliable and efficient.[1]
