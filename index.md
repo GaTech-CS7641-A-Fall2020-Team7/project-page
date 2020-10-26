@@ -21,17 +21,12 @@ In our project, our goal is to train and create a model to have high accuracy in
 # Data Collection
 ---
 At first we want to use the heart disease dataset from kaggle, which is part of the original dataset from Uci. But it is only from cleveland with 300 samples, and this will be too small for us to generate convincing results. So we directly check the original data, it contains four area: Hungary, Virginia, Switzerland and Cleveland. Image of features is given as follows:
-
-<p align="center">
-  <img width="300" height="460" src=/images/features.png>
-</p>
+![Missing Features](/images/features.png)
 
 However, when integrating these data to the clean Cleveland dataset, we found they have significantly many missing entries. For some sub dataset, we discovered that nearly an entire feature can be missing. We created a “missing data image” where missing data entries are highlighted in yellow. A missing feature is represented as a “vertical streak”. image of missing features is given as follows:
-<p align="center">
-  <img width="800" height="300" src=/images/missing_features.png>
-</p>
-
-                              Images from the left to right are Clevelan, Hungary, Switzerland, Virginia.
+![Missing Features](/images/missing_features.png)
+                              
+    Images from the left to right are Clevelan, Hungary, Switzerland, Virginia.
 
 We utilized the k-nearest-neighbors technique to clean the integrated dataset. Surprisingly, we found no single completely clean data point from the three other datasets except for the Cleveland dataset, which instead has only clean data. Taking that into consideration, we only used the Cleveland data as the reference to calculate the nearest neighbors and attempted to restore the missing data one by one in the remaining three datasets. For a numerical feature, we took the arithmetic mean of the neighbors, and for a categorical one, we assigned the most frequent value among the neighbors using voting.
 
@@ -42,38 +37,25 @@ This data cleaning is not perfect, but is expected to provide a reasonably large
 # Visualization
 ---
 We first use Pearson correlation to generate graph among 13 features (except label), the image is given as follows:
-<p align="center">
-  <img width="460" height="460" src=/images/corr.png>
-</p>
+![Missing Features](/images/corr.png)
 
 Then we use different plots to show the relations between single features and target value (label), some of the visualizations are given as follows:
-<p align="center">
-  <img width="500" height="460" src=/images/chest_pain.png>
-</p>
+![Missing Features](/images/chest_pain.png)
 
-<p align="center">
-  <img width="550" height="460" src=/images/cholestrol.png>
-</p>
+![Missing Features](/images/cholestrol.png)
 
-<p align="center">
-  <img width="550" height="460" src=/images/age.png>
-</p>
+![Missing Features](/images/age.png)
 
 Besides, we also draw age and gender distribution of all samples:
-<p align="center">
-  <img width="800" height="300" src=/images/age_distribution.png>
-</p>
+![Missing Features](/images/age_distribution.png)
 
-<p align="center">
-  <img width="460" height="460" src=/images/gender.png>
-</p>
+
+![Missing Features](/images/gender.png)
 
 # Feature Selection
 ---
 We use PCA to select features (from 2 to 13), and use Logistic Regression, KNN and Kmeans to test the accuracy (training samples is 70% of the total dataset). Results are given as follows:
-<p align="center">
-  <img width="800" height="500" src=/images/acc_pca.png>
-</p>
+![Missing Features](/images/acc_pca.png)
 
 In the above plots above we have the reduced dimension of x axis and accuracy of y axis. From the accuracy plot we know that in this problem supervised learning is better than unsupervised learning (Knn is the best), and we should use all the features provided in the datatset instead of doing dimension reduction on it.
 
@@ -89,7 +71,7 @@ We explore our data and build our model through both unsupervised and supervised
 1. Logistic Regression: a perfect algorithm suitable for **binary classification** also as first shot to see if data is **linearly separable**.
 2. SVM: apply different **kernel methods and compare** its performance with the logistic regression approach.
 3. NN: build a simple multi layer perceptron network for this classification task as an introductory step toward **deep learning**.
-4. KNN: a **simple and robust** classification method; fast to compute given the dataset is relatively small with 300~ points
+4. KNN: a **simple and robust** classification method; fast to compute given the dataset is relatively small with 850~ points
 5. Random Forest: we will explore the power of **ensemble learning** models in terms of improving accuracies and **preventing overfitting**.
 
 # Results
