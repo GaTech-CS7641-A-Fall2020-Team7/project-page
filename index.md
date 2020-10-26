@@ -21,9 +21,11 @@ In our project, our goal is to train and create a model to have high accuracy in
 # Data Collection
 ---
 At first we want to use the heart disease dataset from kaggle, which is part of the original dataset from Uci. But it is only from cleveland with 300 samples, and this will be too small for us to generate convincing results. So we directly check the original data, it contains four area: Hungary, Virginia, Switzerland and Cleveland. Image of features is given as follows:
-![Missing Features](/images/features.png)
+
+![Features](/images/features.png)
 
 However, when integrating these data to the clean Cleveland dataset, we found they have significantly many missing entries. For some sub dataset, we discovered that nearly an entire feature can be missing. We created a “missing data image” where missing data entries are highlighted in yellow. A missing feature is represented as a “vertical streak”. image of missing features is given as follows:
+
 ![Missing Features](/images/missing_features.png)
                               
     Images from the left to right are Clevelan, Hungary, Switzerland, Virginia.
@@ -37,9 +39,11 @@ This data cleaning is not perfect, but is expected to provide a reasonably large
 # Visualization
 ---
 We first use Pearson correlation to generate graph among 13 features (except label), the image is given as follows:
+
 ![Missing Features](/images/corr.png)
 
 Then we use different plots to show the relations between single features and target value (label), some of the visualizations are given as follows:
+
 ![Missing Features](/images/chest_pain.png)
 
 ![Missing Features](/images/cholestrol.png)
@@ -47,6 +51,7 @@ Then we use different plots to show the relations between single features and ta
 ![Missing Features](/images/age.png)
 
 Besides, we also draw age and gender distribution of all samples:
+
 ![Missing Features](/images/age_distribution.png)
 
 
@@ -55,6 +60,7 @@ Besides, we also draw age and gender distribution of all samples:
 # Feature Selection
 ---
 We use PCA to select features (from 2 to 13), and use Logistic Regression, KNN and Kmeans to test the accuracy (training samples is 70% of the total dataset). Results are given as follows:
+
 ![Missing Features](/images/acc_pca.png)
 
 In the above plots above we have the reduced dimension of x axis and accuracy of y axis. From the accuracy plot we know that in this problem supervised learning is better than unsupervised learning (Knn is the best), and we should use all the features provided in the datatset instead of doing dimension reduction on it.
