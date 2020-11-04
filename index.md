@@ -86,7 +86,7 @@ Results are shown above in different sections.
 
 # Discussion
 ---
-During this phase of the project, we have some discussions on data cleaning, visualization, feature selection and some unsupervised && supervised methods. The next step is using more methods to test the results and reach higher accuracy. 
+During this phase of the project, we have some discussions on data cleaning, visualization, feature selection and some unsupervised && supervised methods. For data cleaning, we examined the columns in the dataset and hold discussion about the best way to fill out the empty entires. For visualization, we each contributed to finding out good ways to display the data by trying different libraries. Then we divided out work into person and perform centern machine learning methods on the data and collect the results. Right now, we have obtained the initial results on the dataset by performing preliminary analysis and apply various mahcine learning methods, but there's still room for improved accuracy. The current accuracies of different methods are all below 80%. In the next half of the project, we will focus on refining the features and improving our machine learning methods such as training configuration or even use data augmentation. We will attemp to train the data using more methods and collect more and better results.
 
 
 # References
