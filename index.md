@@ -82,7 +82,17 @@ We explore our data and build our model through both unsupervised and supervised
 
 # Results
 ---
-Results are shown above in different sections.
+<!-- Results are shown above in different sections. -->
+## Supervised:
+5. Random Forest: We experimented with single decision tree as well as
+random forest classifiers on our datasets. We tweaked parameters including
+the **max_depth** of the trees, and we analyzed the importance of different features.
+
+![Missing Features](/images/dt.png)
+![Missing Features](/images/rf.png)
+![Missing Features](/images/fi.png)
+
+From the feature importance analysis, we could see that the three most important features that affect heart disease are: The chest pain experienced(*cp*), The person's cholesterol measurement in mg/dl(*chol*), and the slope of the peak exercise ST segment(*slope*).
 
 # Discussion
 ---
