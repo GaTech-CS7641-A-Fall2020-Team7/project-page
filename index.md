@@ -59,9 +59,9 @@ Besides, we also draw age and gender distribution of all samples:
 
 # Feature Selection
 ---
-We use PCA to select features (from 2 to 13), and use Logistic Regression, KNN and Kmeans to test the accuracy (training samples is 70% of the total dataset). Results are given as follows:
+We use PCA to select features (from 2 to 13), and use Logistic Regression, KNN, SVM and Kmeans to test the accuracy (training samples is 70% of the total dataset). Results are given as follows: (Orange line shows the accuracy achieved without PCA)
 
-![Missing Features](/images/acc_pca.png)
+![Missing Features](/images/PCA.png)
 
 In the above plots above we have the reduced dimension of x axis and accuracy of y axis. From the accuracy plot we know that in this problem supervised learning is better than unsupervised learning (Knn is the best), and we should use all the features provided in the datatset instead of doing dimension reduction on it.
 
@@ -94,9 +94,13 @@ the **max_depth** of the trees, and we analyzed the importance of different feat
 
 From the feature importance analysis, we could see that the three most important features that affect heart disease are: The chest pain experienced(*cp*), The person's cholesterol measurement in mg/dl(*chol*), and the slope of the peak exercise ST segment(*slope*).
 
+6. SVM: We experimented with support vector machines with different kernels. The kernel we tested upon including linear kernel, RBF (radial basis function) kernel, polynomial kernel and sigmoid kernel.
+![SVM Accuracy](/images/SVM.png)
+The resulting accuracy are shown above. We find out that the linear kernel fits the data best, with testing accuracy around 78%.
+
 # Discussion
 ---
-During this phase of the project, we have some discussions on data cleaning, visualization, feature selection and some unsupervised && supervised methods. For data cleaning, we examined the columns in the dataset and hold discussion about the best way to fill out the empty entires. For visualization, we each contributed to finding out good ways to display the data by trying different libraries. Then we divided out work into person and perform centern machine learning methods on the data and collect the results. Right now, we have obtained the initial results on the dataset by performing preliminary analysis and apply various mahcine learning methods, but there's still room for improved accuracy. The current accuracies of different methods are all below 80%. In the next half of the project, we will focus on refining the features and improving our machine learning methods such as training configuration or even use data augmentation. We will attemp to train the data using more methods and collect more and better results.
+During this phase of the project, we have some discussions on data cleaning, visualization, feature selection and some unsupervised && supervised methods. For data cleaning, we examined the columns in the dataset and hold discussion about the best way to fill out the empty entires. For visualization, we each contributed to finding out good ways to display the data by trying different libraries. Then we divided out work into person and perform centern machine learning methods on the data and collect the results. Based on PCA testing results, we decided to use all features for training and testing. We explored methods which are either supervised and unsupervised on the dataset, and obtained results as displayed above. The best accuracy achieved so far is the supervised method of random forest, which is around 86%. There might be other ways to further improve the testing result for practical use, but our result obtained so far generates an accuracy over 85% and is good enough for experimental results.
 
 
 # References
