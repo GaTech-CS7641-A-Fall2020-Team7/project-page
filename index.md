@@ -84,7 +84,7 @@ We explore our data and build our model through both unsupervised and supervised
 ---
 <!-- Results are shown above in different sections. -->
 ## Supervised:
-5. Random Forest: We experimented with single decision tree as well as
+1. Random Forest: We experimented with single decision tree as well as
 random forest classifiers on our datasets. We tweaked parameters including
 the **max_depth** of the trees, and we analyzed the importance of different features.
 
@@ -94,7 +94,7 @@ the **max_depth** of the trees, and we analyzed the importance of different feat
 
 From the feature importance analysis, we could see that the three most important features that affect heart disease are: The chest pain experienced(*cp*), The person's cholesterol measurement in mg/dl(*chol*), and the slope of the peak exercise ST segment(*slope*).
 
-6. SVM: We experimented with support vector machines with different kernels. The kernel we tested upon including linear kernel, RBF (radial basis function) kernel, polynomial kernel and sigmoid kernel.
+2. SVM: We experimented with support vector machines with different kernels. The kernel we tested upon including linear kernel, RBF (radial basis function) kernel, polynomial kernel and sigmoid kernel.
 
 ![SVM Accuracy](/images/SVM.png)
 
