@@ -101,6 +101,7 @@ From the feature importance analysis, we could see that the three most important
 The resulting accuracy are shown above. We find out that the linear kernel fits the data best, with testing accuracy around 78%.
 
 3. Neural Network: The Network structure is given as follows:
+
 ![nn_structure](/images/nn_structure.png)
 
 While the train loss and accuracy are also given. The final accuracy can reach to 84% after 40 iterations.
