@@ -71,11 +71,13 @@ We explore our data and build our model through both unsupervised and supervised
 
 ## Unsupervised:
 1. PCA: reduce feature dimensionality by identifying the most relevant features and discovering the correlations between them.
-2. DBSCAN: group dense clusters and identify outliers to remove before training on a sensitive supervised model.
 # Results
 ---
 Kmeans: Apply the elbow method to find the best number of clusters, train the model and plot the graph by number of cluster vs the square distance between each one of clusters, we try different number of clusters here.
+![el](/images/el.png)
 
+In order to visualize all the data in 2D, we apply pca to reduce the features to 2, we catgorize the data into different clusters use the optimum number of cluster(4)
+![kmeans](/images/kmeans.png)
 
 ## Supervised:
 1. Logistic Regression: a perfect algorithm suitable for **binary classification** also as first shot to see if data is **linearly separable**.
