@@ -79,6 +79,8 @@ Kmeans: Apply the elbow method to find the best number of clusters, train the mo
 In order to visualize all the data in 2D, we apply pca to reduce the features to 2, we catgorize the data into different clusters use the optimum number of cluster(4)
 ![kmeans](/images/kmeans.png)
 
+we use silhouette coefficient to test the accuracy, the test accuracy we get is around 44%
+
 ## Supervised:
 1. Logistic Regression: a perfect algorithm suitable for **binary classification** also as first shot to see if data is **linearly separable**.
 2. SVM: apply different **kernel methods and compare** its performance with the logistic regression approach.
