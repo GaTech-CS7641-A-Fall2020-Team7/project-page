@@ -78,6 +78,7 @@ Kmeans: Apply the elbow method to find the best number of clusters, train the mo
 
 In order to visualize all the data in 2D, we apply pca to reduce the features to 2, we catgorize the data into different clusters use the optimum number of cluster(4)
 ![kmeans](/images/kmeans.png)
+
 we use silhouetee cofficient to test the accuracy, the accuracy around 44%
 
 ## Supervised:
